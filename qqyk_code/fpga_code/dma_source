@@ -1,0 +1,32 @@
+/*+++++++++++++++++++++++++++++++++++
+author:qqyk
+++ r
+++ a
+++ m
+++ _
+++ n
+++ u
+++ m
+++ b
+++ e
+++ r
+++ _
+++ r
+++ e
+++ g
++++++++++++++++++++++++++++++++++++++*/
+module source_dma_16(
+	input wire  clk,
+	input wire  rst,
+	input wire  data_load_en,
+	input wire [7:0] data,
+	input wire  control_en,
+	output   ram_wr_en,
+	output reg [9:0] ram_address,
+	output reg [3:0] ram_selcet
+);
+always@(posedge clk)
+begin
+end
+assign ram_wr_en&&control_en = en;
+endmodule
